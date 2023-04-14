@@ -32,9 +32,9 @@ kind: Service
 metadata:
   name: kube-news
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: kube-news
   ports:
-    - port: 8080
-      nodePort: 30000
+    - port: 80
+      targetPort: 8080
