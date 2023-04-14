@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: app
-          image: ghcr.io/emanuelfrn/kube-news:v1
+          image: ghcr.io/emanuelfrn/kube-news:{{TAG}}
           ports:
             - containerPort: 8080
           env:
